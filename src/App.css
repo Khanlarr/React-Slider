@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+.slick-arrow{
+  color: black;
+   background-color: rgb(167, 144, 14);
+  height: 30px;
+  width: 30px;
+  border-radius: 0.4rem;
+  transition: all 0.3s linear;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slick-arrow:hover,.slick-arrow:active{
+  background-color: rgb(167, 144, 14) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slick-prev{
+  z-index: 100;
+  left: 20px !important;
+  border: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.slick-next{
+  z-index: 100;
+  right: 20px !important;
+}
+.homeslider img{
+  height: 150px;
+  width: 150px;
+  border: 4px solid rgb(240, 234, 151);
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: auto;
+  box-shadow:1px 1px 10px rgb(240, 234, 151);
+}
+.reviews{
+  padding-top: 4rem;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  transition: all 0.3s linear;
+}
+.reviews span{
+  color: rgb(170, 118, 20);
+}
+.slider{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+ overflow: hidden;
 }
-
-.App-link {
-  color: #61dafb;
+.homeslider{
+  width: 50rem;
+  text-align: center;
+  transition: all 0.3s linear;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.homeslider h1{
+  font-size: 1rem;
+  letter-spacing: 2.4px;
+  color: rgb(138, 123, 41);
+}
+.homeslider h3{
+  font-weight: 300;
+  font-size: 1rem;
+}
+.homeslider p{
+  font-size: 0.94rem;
+  letter-spacing: 1.2px;
+  color: rgba(81, 84, 85, 0.959);
+  line-height: 1.5rem;
+  transition: all 0.3s linear;
+}
+.homeslider i{
+  padding-top: 1rem;
+  font-size: 3rem;
+  color: brown;
+  padding-bottom: 3rem;
+}
+@media only screen and (max-width:1000px){
+  .homeslider{
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width:800px){
+  .slick-arrow{
+    height: 25px;
+    width: 25px;
+  }
+  .reviews{
+    font-size: 1.9rem;
+    padding-bottom: 1rem;
+  }
+  .homeslider p{
+    font-size: 0.85rem;
   }
 }
